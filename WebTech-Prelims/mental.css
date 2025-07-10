@@ -1,0 +1,777 @@
+@font-face {
+    font-family: 'Utah Condensed Bold';
+    src: url(fonts/Utah\ Condensed\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(fonts/Inter-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url(fonts/Inter-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'Inter-ExtraBoldItalic';
+    src: url(fonts/Inter-ExtraBoldItalic.otf);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.562);
+    z-index: -1;
+}
+
+/* this section is for the navigaton bar css */
+nav {
+    background-color: #17171757;
+    padding: 6px 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav {
+    background-color: #17171757;
+    padding: 6px 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    align-items: center;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav .logo {
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav .logo img {
+    width: 40px;
+    height: auto;
+}
+
+nav .logo img {
+    width: 40px;
+    height: auto;
+}
+
+nav .logo-text,
+a {
+    font-family: 'Utah Condensed Bold', sans-serif;
+    margin-right: auto;
+    margin-left: 3px;
+    font-size: 20px;
+    margin-left: 3px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+}
+
+nav ul li a {
+    font-family: 'Utah Condensed Bold', sans-serif;
+    font-size: 17px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav:hover ul li a:hover {
+    color: #6699CC;
+    font-weight: bold;
+}
+
+/* mentalhealth */
+
+/* mental health page body */
+.mhealth {
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('images/mentalhealth.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* mental health page title */
+.mtitle {
+    padding: 100px;
+}
+
+/* article heading */
+.mtitle h1 {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0px 10px 35px rgba(219, 219, 219, 0.705);
+}
+
+/* summarized article section */
+.sum-article {
+    margin: 0 auto;
+    padding: 6rem;
+    background-color: rgb(241, 241, 241);
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+/* summarized article title */
+.sum-article-header h2 {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 5rem;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 0px 10px 35px rgba(156, 156, 156, 0.705);
+}
+
+/* summarized article div */
+.sum-article div {
+    margin-bottom: 45px;
+}
+
+/* summarized article images */
+.mhcontent1 img {
+    margin: 20px;
+    width: 20rem;
+    height: 20rem;
+    float: left;
+}
+
+.mhcontent2 img {
+    margin: 30px;
+    width: 20rem;
+    height: 15rem;
+    float: right;
+}
+
+/* summarized article texts */
+.mhcontent h4 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mhcontent p {
+    margin: 10px;
+    text-align: justify;
+    word-spacing: normal;
+    line-height: 25px;
+}
+
+.sum-article p {
+    margin: 20px;
+}
+
+.sum-article h4 {
+    margin: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/* facts about mental health section */
+.mhfacts {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/factsbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* facts title */
+.mhfacts h2 {
+    margin: 25px;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Utah Condensed Bold', sans-serif;
+    font-size: 7rem;
+    color: white;
+    text-shadow: -5px 10px 25px black;
+}
+
+/* facts card container */
+.fcards-container {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* facts cards */
+.fcards {
+    margin: 15px 30px;
+    padding: 40px;
+    min-height: 380px;
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffffc5;
+    box-shadow: 0px 18px 28px rgba(0, 0, 0, 1);
+}
+
+/* facts texts */
+.fcards h3 {
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.fcards p {
+    font-size: 15px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.842);
+}
+
+/* facts images */
+.fcards img {
+    margin: 25px;
+    padding: 5px;
+    height: 8rem;
+    width: 8rem;
+}
+
+
+/* organizations related to  mental health section */
+.m-organization {
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: white;
+}
+
+.m-organization .m-org-heading {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+/* title of orgs section */
+.m-org-heading h5 {
+    margin: 0 auto; 
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    color: #171717;
+    text-align: center; 
+    width: fit-content; 
+}
+
+/* organization cards */
+.m-cards {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+
+/* images in the card */
+.m-cards .card-container .m-image-holder {
+    width: 100%;
+    height: 60%;
+    background: no-repeat center center / cover;
+    position: relative;
+}
+
+.m-cards .card-container.one .m-image-holder {
+    background-image: url(images/m1.png);
+}
+
+.m-cards .card-container.two .m-image-holder {
+    background-image: url(images/m2.png);
+}
+
+.m-cards .card-container.three .m-image-holder {
+    background-image: url(images/m3.png);
+}
+
+.m-cards .card-container.four .m-image-holder {
+    background-image: url(images/m4.png);
+}
+
+/* hover animation */
+.m-cards .card-container:hover {
+    transform: translateY(-1rem);
+}
+
+.m-cards .card-container {
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    width: 17rem;
+    height: 25rem;
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* texts in the card */
+.m-cards .card-container .mcard-text {
+    background-color: white;
+    padding: 2rem; /* Maintain padding */
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.5rem; /* Add padding at the top */
+    padding-bottom: 1.5rem; /* Add padding at the bottom */
+}
+
+.m-cards .card-container .mcard-text h4 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Media query for phone size (max-width: 480px) */
+
+@media only screen and (max-width: 480px) {
+
+    /* nav bar */
+    nav {
+        flex-direction: row;
+        padding: 10px 10%;
+        box-shadow: none;
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        background-color: #03002e;
+    }
+
+    nav .logo {
+        font-size: 10px;
+    }
+
+    nav .logo img {
+        width: 20px;
+        margin-left: -22px;
+        border: 1px solid #fff;
+        border-radius: 100%;
+
+    }
+
+    nav .logo-text,
+    a {
+        font-size: 17px;
+        color: #fefefe;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        margin-left: 20px;
+        margin-right: -20px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 5px;
+        color: #fefefe;
+    }
+
+    /* body */
+    .mtitle{
+        display: none;
+        background-image: none;
+    }
+
+    /* Adjusting the font sizes for titles */
+    .mtitle h1 {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 75px;
+    }
+
+    .sum-article-header h2 {
+        font-size: 35px;
+        line-height: 3rem;
+    }
+
+    /* Article Images */
+    .mhcontent1 img,
+    .mhcontent2 img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 10px 0;
+    }
+
+    /* Summarized article padding adjustment */
+    .sum-article {
+        padding: 2rem;
+        background-color: #e0f7fa;
+    }
+
+    .sum-article h4 {
+        font-size: 16px;
+    }
+
+    /* Mental Health Facts section adjustments */
+
+    .mhfacts {
+        background-color: #cce3cd;
+        background-image: none; 
+        height: 100%;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .mhfacts h2 {
+        font-size: 4rem;
+        padding: 15px;
+    }
+
+    .fcards-container {
+        margin: 20px;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fcards {
+        width: 70%;
+        padding: 20px;
+        min-height: auto;
+        background-color: #e0f7fa;
+    }
+
+    .fcards h3 {
+        font-size: 20px;
+    }
+
+    .fcards p {
+        font-size: 14px;
+    }
+
+    /* Organization section adjustments */
+    .m-organization {
+        padding: 1rem;
+    }
+
+    .m-org-heading h5 {
+        font-size: 25px;
+    }
+
+    .m-cards {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .m-cards .card-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .m-cards .card-container .m-image-holder {
+        height: 200px;
+    }
+
+    .m-cards .card-container .mcard-text {
+        padding: 1rem;
+    }
+
+    .m-cards .card-container .mcard-text h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+:root {
+    --primary: #6699CC;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+    /* UNIVERSAL */
+    
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+    /* UNIVERSAL */
+
+/* Footer */
+#cs-footer-274 {
+background-color: var(--background-color, #ffffff);
+color: var(--text-color, #4e4b66);
+padding: var(--section-padding);
+}
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+#cs-footer-274 .cs-container {
+    width: 100%;
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Vertically center content */
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+#cs-footer-274 .cs-logo-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: clamp(2.75rem, 6.8vw, 3.25rem);
+}
+#cs-footer-274 .cs-logo {
+    width: 60px; /* Matches the header logo size */
+    height: auto;
+    margin-right: 1rem; /* Spacing between logo and text */
+}
+#cs-footer-274 .cs-logo-img {
+    width: 100%;
+    height: auto;
+}
+#cs-footer-274 .logo-text a {
+    color: var(--text-color, #4e4b66); /* Uniform text color */
+    font-family: 'Utah Condensed Bold', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+}
+#cs-footer-274 .cs-social {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#cs-footer-274 .cs-social-link {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--social-background-color, #4e4b66);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s, background-color 0.3s;
+}
+#cs-footer-274 .cs-social-link:hover {
+    background-color: var(--primary-color, #0066cc);
+    transform: translateY(-0.1875rem);
+}
+#cs-footer-274 .cs-social-img {
+    height: 0.8125rem;
+    width: auto;
+    display: block;
+}
+#cs-footer-274 .cs-nav {
+    padding: 0;
+    margin: 0;
+}
+#cs-footer-274 .cs-nav-li {
+    list-style: none;
+    margin: 0;
+}
+#cs-footer-274 .cs-header {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    margin-bottom: clamp(1rem, 2.7vw, 1.25rem);
+    color: var(--text-color, #4e4b66); /* Uniform header color */
+    position: relative;
+    display: block;
+}
+#cs-footer-274 .cs-nav-link {
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 1.5em;
+    color: var(--text-color, #4e4b66); /* Uniform link color */
+    position: relative;
+}
+#cs-footer-274 .cs-nav-link:before {
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    background: var(--text-color, #4e4b66); /* Uniform underline color */
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width 0.3s;
+}
+#cs-footer-274 .cs-nav-link:hover:before {
+    width: 100%;
+}
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+#cs-footer-274 .cs-container {
+    max-width: 80rem;
+    row-gap: 0;
+    column-gap: clamp(2.75rem, calc(6%), 5.5rem);
+}
+#cs-footer-274 .cs-logo-group {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Vertically center content */
+}
+#cs-footer-274 .cs-social {
+    flex-direction: row;
+    position: relative;
+    top: auto;
+    right: auto;
+}
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+#cs-footer-274 .cs-container {
+    justify-content: flex-start; /* Align content to the left */
+}
+#cs-footer-274 .cs-logo-group {
+    width: auto;
+    margin: 0;
+    margin-right: auto;
+    flex-direction: row; /* Ensures horizontal layout */
+    align-items: center;
+}
+#cs-footer-274 .cs-logo-img {
+    margin-right: 1rem; /* Spacing between logo and text */
+}
+#cs-footer-274 .cs-nav {
+    margin-top: 0.75rem;
+}
+}
