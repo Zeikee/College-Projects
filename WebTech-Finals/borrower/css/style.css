@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../assets/fonts/Poppins-Regular.otf);
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url(../../assets/fonts/Poppins-Medium.otf);
+}
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url(../../assets/fonts/Poppins-SemiBold.otf);
+}
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(../../assets/fonts/Poppins-Bold.otf);
+}
+@font-face {
+    font-family: 'Poppins ExtraBold';
+    src: url(../../assets/fonts/Poppins-ExtraBold.otf);
+}
+@font-face {
+    font-family: 'Poppins Black';
+    src: url(../../assets/fonts/Poppins-Black.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+    padding-top: 50px;
+}
+
+.login-box, .register-box {
+    background-color: #b3c8e6;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-bottom: 150px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: 'Poppins ExtraBold', sans-serif;
+    color: #1e185b;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-group .show-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+/* Styling the register link */
+.login-box .register-link {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-box .register-link a {
+    color: #4136a3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-box .register-link a:hover {
+    color: #0e1248;
+    text-decoration: underline;
+}
+
+/* Styling the error message */
+.input-group #error {
+    color: red;
+    font-family: 'Poppins Bold', sans-serif;
+    font-size: 14px;
+    margin-top: 12px;
+}
+/* Input-specific placeholder styling */
+input[type="email"]::placeholder {
+    color: #8a8a8a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+input[type="password"]::placeholder {
+    color: #8a8a8a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #888;
+    text-decoration: none;
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #403C2F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-signin:hover {
+    background-color: #e6b800;
+}
+
+.btn-signup {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #403C2F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight:bold;
+}
+/* Styling the register link */
+.register-box .login-link {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-box .login-link a {
+    color: #4136a3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-box .login-link a:hover {
+    color: #0e1248;
+    text-decoration: underline;
+}

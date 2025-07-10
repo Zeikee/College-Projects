@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(../../assets/fonts/Poppins-Bold.otf);
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url(../../assets/fonts/Poppins-Medium.otf);
+}
+/* Homepage */
+body {
+    background-color: #F5F7FA;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    background-color: #1A3B5D;
+}
+
+.logo img {
+    width: 90px;
+    margin-left: 10px;
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(83, 142, 209, 0.33);
+}
+
+/* Dropdown menu */
+.navbar nav ul li ul {
+    position: absolute;
+    background-color: #1A3B5D;
+    display: none;
+    z-index: 999;
+    width: 200px;
+}
+
+.navbar nav ul li ul li {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar ul li ul li a {
+    text-align: left;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.navbar ul li ul li a:hover {
+    background-color: #476B92;
+}
+.dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#equipment-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+#facilities-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+
+/* Profile Section */
+.user-profile {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: right;
+    margin-left: 40px;
+    position: relative;
+}
+.user-profile-03 {
+    width: 30px;
+    height: 30px;
+    background: url('../../assets/images/user.png') no-repeat center;
+    background-size: cover;
+    margin-right: 10px;
+    display: inline-block;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+.user-profile span {
+    display: block;
+    white-space: nowrap;
+    font-size: 14px;
+}
+#user-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #fff;
+}
+.user-dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #1A3B5D;
+    list-style: none;
+    padding: 0;
+    z-index: 1000;
+    width: 120px;
+}
+.user-dropdown-menu li {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+}
+.user-dropdown-menu li a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.user-dropdown-menu li:hover {
+    background-color: #476B92;
+}
+
+.user-dropdown-menu li a:hover {
+    color: white;
+}
+.user-dropdown-menu.show {
+    display: block;
+}
+
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    background: url('../../assets/images/background.png') no-repeat center;
+    background-size: cover;
+
+}
+.banner-overlay {
+    position: absolute;
+    width: 100%;
+    height: 416px;
+    top: 0;
+    background: linear-gradient(90deg, rgba(43, 43, 43, 0.3) 39%, rgba(184, 184, 184, 0.3) 58.5%);
+}
+
+.banner h1 {
+    position: absolute;
+    left: 61px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67px;
+}
+
+.banner h1:first-of-type {
+    top: 200px;
+    color: #FEC601;
+}
+
+.banner h1:last-of-type {
+    top: 260px;
+    color: #FFFFFF;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 0;
+}
+
+.service-card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 543px;
+    height: 380px;
+    padding: 20px;
+    position: relative;
+}
+
+.service-card h2 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 30px;
+    color: #333333;
+}
+
+.service-card p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(51, 51, 51, 0.62);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-card button {
+    background-color: #FEC601;
+    border: none;
+    border-radius: 5px;
+    width: 181px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1A3B5D;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+.btn-class {
+    background-color: #edd883;
+    color: #000;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Poppins Medium', sans-serif;
+}
+
+.btn-class:hover {
+    background: #e8d792;
+}

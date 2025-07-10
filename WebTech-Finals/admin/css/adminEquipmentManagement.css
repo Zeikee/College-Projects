@@ -1,0 +1,599 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../assets/fonts/Poppins-Regular.otf);
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url(../../assets/fonts/Poppins-Medium.otf);
+}
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url(../../assets/fonts/Poppins-SemiBold.otf);
+}
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(../../assets/fonts/Poppins-Bold.otf);
+}
+@font-face {
+    font-family: 'Poppins ExtraBold';
+    src: url(../../assets/fonts/Poppins-ExtraBold.otf);
+}
+@font-face {
+    font-family: 'Poppins Black';
+    src: url(../../assets/fonts/Poppins-Black.otf);
+}
+
+
+/* Homepage */
+body {
+    background-color: #F5F7FA;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    background-color: #1A3B5D;
+}
+
+.logo img {
+    width: 90px;
+    margin-left: 10px;
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(83, 142, 209, 0.33);
+}
+
+/* Dropdown menu */
+.navbar nav ul li ul {
+    position: absolute;
+    background-color: #1A3B5D;
+    display: none;
+    z-index: 999;
+    width: 200px;
+}
+
+.navbar nav ul li ul li {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar ul li ul li a {
+    text-align: left;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.navbar ul li ul li a:hover {
+    background-color: #476B92;
+}
+.dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#equipment-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+#facilities-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+
+/* Profile Section */
+.user-profile {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: right;
+    margin-left: 40px;
+    position: relative;
+}
+.user-profile-03 {
+    width: 30px;
+    height: 30px;
+    background: url('../../assets/images/user.png') no-repeat center;
+    background-size: cover;
+    margin-right: 10px;
+    display: inline-block;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+.user-profile span {
+    display: block;
+    white-space: nowrap;
+    font-size: 14px;
+}
+#user-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #fff;
+}
+.user-dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #1A3B5D;
+    list-style: none;
+    padding: 0;
+    z-index: 1000;
+    width: 120px;
+}
+.user-dropdown-menu li {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+}
+.user-dropdown-menu li a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.user-dropdown-menu li:hover {
+    background-color: #476B92;
+}
+
+.user-dropdown-menu li a:hover {
+    color: white;
+}
+.user-dropdown-menu.show {
+    display: block;
+}
+
+.dashboard-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1A3B5D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-right: 400px;
+    transition: font-weight 0.2s ease;
+}
+
+.back-icon {
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.back-link:hover {
+    font-weight: bolder;
+}
+
+.title {
+    text-align: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.equipment-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #99a9df;
+    color: #1F1F1F;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 390px;
+}
+.parent-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    width: 300px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #99a9df;
+}
+
+.sort-dropdown {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+
+/* Equipment Table */
+.equipment-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Table Headers */
+.equipment-table th,
+.equipment-table td {
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    word-wrap: break-word
+}
+
+/* Table Header */
+.equipment-table thead {
+    background-color: #E4E4E4;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+/* Alternating Row Colors */
+.equipment-table tbody tr:nth-child(odd) {
+    background-color: #F9F9F9;
+}
+
+.equipment-table tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+/* Status Column */
+.equipment-table td .status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.actions-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.actions-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.actions-dropdown.show {
+    display: block;
+}
+
+
+.actions-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: 0;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+
+.action-item {
+    list-style: none;
+    list-style-position: outside;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #333;
+    margin-left: -30px;
+}
+
+.action-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Status Indicator */
+.status-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+/* General Modal Styles */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+}
+
+/* Shared Input and Button Styles */
+.modal-content input,
+.modal-content select {
+    width: 50%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #d9534f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Edit Modal Specific Styles */
+#edit-modal .modal-container {
+    display: block;
+    padding-top: 60px;
+}
+
+#edit-modal .modal-content {
+    flex-direction: column; 
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Edit Modal Button */
+#edit-modal .modal-content input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#edit-modal .modal-content select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.edit-btn {
+    display: block;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 15px;
+    width: auto;
+    text-align: center;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.edit-btn:active {
+    transform: translateY(0);
+}
+
+/* Delete Modal Specific Styles */
+#delete-modal .modal-container {
+    display: block;
+    padding-top: 60px;
+}
+
+#delete-modal .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+}
+/* Delete Modal Input and Select */
+#delete-modal .modal-content input {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #c9302c;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#delete-modal .modal-content select {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #c9302c;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* Delete Modal Buttons */
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 15px;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+}
+
+.delete-btn:active {
+    transform: translateY(0);
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 15px;
+}
+
+.cancel-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.cancel-btn:active {
+    transform: translateY(0);
+}
