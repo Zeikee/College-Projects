@@ -1,0 +1,96 @@
+module BoggledGame {
+  // Define a struct to represent a player
+  struct Player {
+    string username; // player's username
+    string password; // player's password
+    short wins; // number of wins for this player
+    long score;
+  };
+
+  // Define a struct to represent a word sent by a player
+  struct Words {
+    string gameId; // ID of the game this word was sent for
+    string player; // username of the player who sent this word
+    string word; // the actual word sent by the player
+    long point;
+  };
+
+  // Define a struct to represent a round of the game
+  struct Round {
+    string id; // unique ID for this round
+    sequence<char> randomLetters; // the random letters for this round
+    sequence<Words> wordsSentByPlayers; // words sent by players for this round
+    string winner; // username of the winner of this round (if any)
+    string status; // status of the round (e.g. "in progress", "completed")
+  };
+
+  // Define a struct to represent a game
+  struct Game {
+    string id; // unique ID for this game
+    sequence<Player> players; // list of players in this game
+    sequence<Round> rounds; // list of rounds played in this game
+    string winner; // username of the overall winner of the game (if any)
+    long roundTime;
+    long roundWins;
+    boolean isGameOver;
+    long winnerScore;
+  };
+
+
+  // Define a struct to represent top players
+  struct TopPlayers {
+    sequence<string> topPlayer; // list of top players (each element is a sequence of strings)
+  };
+
+  // Define exceptions that can be raised by the interface
+  exception LoginException {
+    string reason; // reason for the login failure
+  };
+
+  exception SendWordException {
+    string reason; // reason for the word send failure
+  };
+
+  exception StartGameException {
+    string reason; // reason for the game start failure
+  };
+
+  // Define the BoggledInterface interface
+  interface BoggledInterface {
+    // Login a player
+    void login(in Player gamePlayer) raises (LoginException);
+
+    // Check the time remaining in the lobby (before the game starts)
+    long timeChecker(in string gameId);
+
+    // Check the time remaining in the current round
+    long roundTime(in string gameId);
+
+    // Remove a player from a game
+    void removePlayer(in string player, in string gameId); // Remove usage since it doesn't make since
+
+    // Start a new game with the given players
+    Game startGame(in Player players) raises (StartGameException);
+
+    // Get the random letters for the current round
+    Round getLetters(in string player, in string gameId);
+
+    // Start a new round
+    boolean startRound(in string player, in string gameId);
+
+    // Send a word from a player
+    boolean sendWord(in Words word) raises (SendWordException);
+
+    // Get the winner of the current round
+    Round getWinner(in string gameId);
+
+    // Get the top players (e.g. players with the most wins, etc.)
+    TopPlayers getTopPlayers(); // Edit this
+
+    // Update the game state to reflect a player's win
+    Game playerWins(in Game games);
+
+    // Logout a player
+    boolean logout(in Player players);
+  };
+};
