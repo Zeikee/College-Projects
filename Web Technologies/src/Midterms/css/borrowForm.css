@@ -1,0 +1,245 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9FAFB;
+    color: #333;
+}
+
+/* Container */
+.container {
+    background-color: white;
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #374151;
+    background-color: #F9FAFB;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3B82F6;
+    outline: none;
+}
+
+.available-items {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+/* Flex container for equipment and quantity */
+.equipment-quantity-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align labels at the top */
+    gap: 20px; /* Add space between the two inputs */
+}
+
+.select-equipment,
+.quantity {
+    flex: 1;
+}
+
+/* Quantity Input Field */
+input[type="number"] {
+    width: 30%; /* Reduced the width of the quantity field */
+    display: inline-block;
+    margin-right: 10px;
+    width: calc(100% - 130px);
+}
+
+.available-items {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #6B7280;
+    vertical-align: middle;
+}
+
+/* Flex container for equipment and quantity */
+.equipment-quantity-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align labels at the top */
+    gap: 20px; /* Add space between the two inputs */
+}
+
+.select-equipment {
+    flex: 2;  /* Make the select equipment take more space */
+}
+
+.quantity {
+    flex: 1;  /* The quantity input will take less space */
+}
+
+.select-equipment select {
+    width: 100%; /* Ensure the select element takes full width */
+    padding: 12px; /* Add padding for better aesthetics */
+    font-size: 16px; /* Increase font size */
+    border-radius: 10px; /* Keep border consistent */
+    border: 1px solid #D1D5DB;
+    background-color: #F9FAFB;
+}
+
+.quantity input[type="number"] {
+    width: 100%; /* Full width for the quantity input inside its container */
+}
+
+.available-items {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.delete-btn {
+    background-color: transparent; /* No background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+    margin-left: 10px; /* Space between quantity and delete icon */
+    margin-top: 20px;
+}
+
+.delete-btn img {
+    width: 20px; /* Adjust the size of the icon */
+    height: 20px; /* Maintain aspect ratio */
+}
+
+.delete-btn:hover img {
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+/* Add Equipment Button */
+.add-equipment {
+    background-color: transparent;
+    color: #3B82F6;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.add-equipment:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #3B82F6;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #2563EB;
+    transform: translateY(-2px);
+}
+
+/* Back to Dashboard Text Link */
+ .back-link {
+    color: #3B82F6; /* Blue color */
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px; /* Adds space between link and form */
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #2563EB; /* Darker blue on hover */
+}
+
+.note {
+    font-size: 12px; /* Adjusts font size */
+    color: #333; /* Text color */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 10px 15px; /* Padding around the text */
+    border-left: 4px solid #007bff; /* Blue left border */
+    margin: 15px 0; /* Margin above and below */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .profile-section {
+        margin-top: 10px;
+    }
+
+
+}
