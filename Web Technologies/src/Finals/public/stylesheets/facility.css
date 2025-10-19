@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    background-color: #1A3B5D;
+}
+
+#logo {
+    width: 90px;
+    margin-left: 10px;
+    margin-bottom:10px;
+}
+
+#home {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+#tablelabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1A3B5D;
+    margin: 20px;
+    text-align: center;
+}
