@@ -1,0 +1,310 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9FAFB;
+    color: #333;
+}
+
+/* Container */
+.container {
+    background-color: white;
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* Input Styles */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #374151;
+    background-color: #F9FAFB;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #3B82F6;
+    outline: none;
+}
+
+.equipment-selection-container {
+    display: flex; /* Enable flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping of elements */
+    justify-content: space-between; /* Space between the elements */
+    gap: 10px; /* Add space between the fields */
+    margin-bottom: 20px;
+}
+
+/* Select Styles */
+.equipment-selection select {
+    width: 90%; /* Ensure full width of the flex item */
+    padding: 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #374151;
+    background-color: #F9FAFB;
+    transition: border-color 0.3s ease;
+}
+
+.equipment-selection {
+    flex: 2; /* Adjusts the width relative to the quantity field */
+}
+
+.quantity-selection {
+    flex: 1; /* Quantity input takes up less space */
+    margin-left: 30px; /* Increased margin to move the quantity section to the right */
+}
+
+/* Quantity Input Styles */
+.quantity-selection input[type="number"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #D1D5DB;
+    border-radius: 10px;
+    width: 90%; /* Adjust width */
+    box-sizing: border-box;
+    margin-left: 10px; /* Moves the input field slightly to the right */
+}
+
+/* Paragraph Style for Available Text */
+.available-quantity {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 15px; /* Adjusts space between input and the 'Available: 3' text */
+    color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    display: none; /* Hidden by default */
+}
+
+/* Move the label slightly to the right as well */
+.quantity-selection label {
+    margin-left: 15px; /* Adjust label position */
+}
+
+.delete-btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.delete-img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.delete-btn:hover .delete-img {
+    opacity: 0.7;
+}
+
+/* Show delete button when an option is selected from the equipment dropdown */
+.equipment-selected .delete-btn {
+    display: inline-block;
+}
+
+/* Textarea Styles */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #374151;
+    background-color: #F9FAFB;
+    transition: border-color 0.3s ease;
+    height: 100px;
+    resize: none;
+}
+
+/* Add Equipment Button */
+.add-equipment {
+    background-color: transparent;
+    color: #3B82F6;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.add-equipment:hover {
+    text-decoration: underline;
+}
+
+/* Ensure the image container stays below the selection */
+#image-container {
+    display: block; /* Make the image visible */
+    margin-top: 20px; /* Add spacing from the selection container */
+    text-align: center; /* Center the image and content */
+    width: 100%; /* Full width for the container */
+    clear: both; /* Prevents the image from floating beside the fields */
+}
+
+.image-container img {
+    max-width: 600px;
+    max-height: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-container p {
+    font-size: 16px;
+    color: #374151;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+/* Dynamic Image Container */
+.dynamic-image-container {
+    display: none;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.dynamic-image-container img {
+    max-width: 600px;
+    max-height: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+.dynamic-equipment-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #374151;
+}
+
+/* Date and Time Section */
+.date-time-picker {
+    margin-bottom: 20px;
+}
+
+.date-time-picker label {
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    color: #2a3d62;
+}
+
+.date-time-input {
+    display: flex;
+    gap: 10px;
+}
+
+.date-time-input input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+/* Submit Button */
+.submit-btn {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-btn:hover {
+    background-color: #ffbb00;
+}
+
+/* Back to Dashboard Text Link */
+ .back-link {
+    color: #3B82F6; /* Blue color */
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px; /* Adds space between link and form */
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #2563EB; /* Darker blue on hover */
+}
+
+.note {
+    font-size: 12px; /* Adjusts font size */
+    color: #333; /* Text color */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 10px 15px; /* Padding around the text */
+    border-left: 4px solid #007bff; /* Blue left border */
+    margin: 15px 0; /* Margin above and below */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .profile-section {
+        margin-top: 10px;
+    }
+}
