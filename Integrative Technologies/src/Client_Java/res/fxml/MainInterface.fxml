@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="695.0" styleClass="vbox_background_center" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainInterfaceController">
+   <top>
+      <HBox prefHeight="105.0" prefWidth="644.0" BorderPane.alignment="CENTER">
+         <Button fx:id="ExitButton" mnemonicParsing="false" onAction="#ExitButtonClicked" prefHeight="51.0" prefWidth="57.0" text="EXIT" textFill="WHITE">
+            <style>-fx-background-radius: 10; -fx-background-color: #000000;</style>
+            <font>
+               <Font name="Arial Black" size="14.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="40.0" top="20.0" />
+            </HBox.margin>
+         </Button>
+         <Label fx:id="boggled" alignment="CENTER" contentDisplay="CENTER" prefHeight="101.0" prefWidth="297.0" text="BOGGLED" textAlignment="CENTER" textFill="WHITE">
+            <HBox.margin>
+               <Insets left="90.0" top="40.0" />
+            </HBox.margin>
+            <font>
+               <Font name="Arial Black" size="51.0" />
+            </font>
+         </Label>
+         <Button fx:id="PlayerButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#playerButtonClicked" prefHeight="52.0" prefWidth="61.0" text="PLAYERS" textAlignment="CENTER" textFill="WHITE">
+            <style>-fx-background-radius: 10; -fx-background-color: #000000;</style>
+            <font>
+               <Font name="Arial Black" size="9.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="60.0" top="20.0" />
+            </HBox.margin>
+         </Button>
+      </HBox>
+   </top>
+   <center>
+      <HBox prefHeight="439.0" prefWidth="644.0" BorderPane.alignment="CENTER">
+         <VBox prefHeight="527.0" prefWidth="554.0">
+            <Label fx:id="timer" alignment="CENTER" prefHeight="40.0" prefWidth="81.0" style="-fx-background-color: #ffffff;  -fx-background-radius: 10; -fx-font-family: Tahoma; -fx-font-weight: Bold; -fx-font-size: 20" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="450.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+               <TextField fx:id="randomLetters" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="150.0" prefWidth="570.0" style="-fx-background-radius: 10; -fx-font-weight: bold; -fx-font-size: 15;">
+                  <VBox.margin>
+                     <Insets left="20.0" top="20.0" />
+                  </VBox.margin>
+               </TextField>
+            <TextField fx:id="input" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="47.0" prefWidth="570.0" promptText="Enter a word">
+               <style>-fx-background-radius: 50; -fx-alignment: center;</style>
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="sendButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sendButtonClicked" prefHeight="33.0" prefWidth="84.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="SEND" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="280.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="validWords" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="118.0" prefWidth="570.0" wrapText="true">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="game" contentDisplay="CENTER" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50;" text="Game:" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="round" layoutX="10.0" layoutY="434.0" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50;" text="Round:">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </VBox>
+      </HBox>
+   </center>
+   <right>
+      <TextField fx:id="nextRound" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="122.0" style="-fx-background-radius: 10; -fx-alignment: CENTER;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" right="30.0" top="500.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </TextField>
+   </right>
+</BorderPane>
